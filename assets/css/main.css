@@ -16,7 +16,7 @@ background-size: cover;
   backdrop-filter: blur (3px);
   -webkit-backdrop-filter: blur(3px);
 }
-#titulo{
+.titulo{
   margin-top: 1rem;
   text-align: center;
   color: #27080b;
@@ -31,6 +31,9 @@ background-size: cover;
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   backdrop-filter: saturate(180%) blur(20px);
+}
+.detalleTarea{
+  display:none
 }
 
 footer {

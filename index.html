@@ -32,7 +32,7 @@
     </nav>
 
     <!-- CONTENIDO DE TU PAGINA -->
-    <div id="titulo"> 
+    <div class="titulo"> 
         <h1> Ingresa una tarea </h1>
     </div>
     <div class="container mt-5">
@@ -40,15 +40,15 @@
             <div class="offset-md-3 col-md-6">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nombreInput" autofocus placeholder="Ingresa una tarea">
+                        <input type="text" class="form-control" id="tareaNombre" autofocus placeholder="Ingresa una tarea">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nombreInput" placeholder="Detalles de tarea">
+                        <input type="text" class="form-control" id="tareaDetalle" placeholder="Detalles de tarea">
                     </div>
                 </div>
                 <div class="offset-md-3 col-md-6">
                     <button type="button" class="btn btn-dark btn-block"
-                    onclick="agregarNombre()">Agregar Tarea</button> 
+                    onclick="agregarTarea()">Agregar Tarea</button> 
                 </div>
        
             </div>
@@ -60,21 +60,44 @@
             <ul class="list-group" id="lista">
                 <ul>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Nombre de la tarea
+                    Nombre de la tarea pendiente
                     <div class="text-align-right">
-                    <button type="button" class="btn btn-success btn-sm"> ✓</button>
-                    <button type="button" class="btn btn-danger btn-sm"> X</button>
+                    <button type="button" class="btn btn-success btn-sm" onclick="tareaCumplida()"> ✓</button>
+                    <button type="button" class="btn btn-danger btn-sm" onclick="eliminarTarea()" > X</button>
                     </div>
                 </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center" id="glass">
-                    <p>
+                <li class="list-group-item d-flex justify-content-between align-items-center detalleTarea" id="glass">
+                
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, distinctio. Enim ducimus, odio exercitationem explicabo provident quidem aspernatur, dicta, minima quos tempore neque nobis. Possimus et aperiam praesentium ex voluptates?
-                    </p>
                 </li>
             </ul>
             </ul>
         </div>
     </div>
+<div>
+    <div class="titulo"> 
+        <h1> Tareas Completadas </h1>
+    </div>
+    <div class="container">
+        <div class="col-md-12 pt-4">
+            <ul class="list-group" id="lista">
+                <ul>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Nombre de la tarea completada
+                    <div class="text-align-right">
+                    <button type="button" class="btn btn-danger btn-sm" onclick="eliminarTarea()" > X</button>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center detalleTarea" id="glass">
+                
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, distinctio. Enim ducimus, odio exercitationem explicabo provident quidem aspernatur, dicta, minima quos tempore neque nobis. Possimus et aperiam praesentium ex voluptates?
+                </li>
+            </ul>
+            </ul>
+        </div>
+    </div>
+</div>
+
     <!-- CONTENIDO DE TU PAGINA -->
 
     <footer class="p-5">
