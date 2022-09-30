@@ -10,7 +10,7 @@ const tareas = [
 ]
 
 function agregarTarea() {
-    if(tareaNombre === "") {
+    if(Tarea == "") {
         alert("Ingresa una tarea o no molestes");
     }
     else {
