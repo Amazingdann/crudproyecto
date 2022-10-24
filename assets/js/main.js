@@ -12,8 +12,7 @@ let completadas = (localStorage.getItem("completadas")) ? JSON.parse(localStorag
 ];
 actualizarLista();
 actualizarCompletadas();
-// investigar if ternario  
-////{tarea:tareaNombre.value, detalle: tareaDetalle.value}
+
 
 function agregarTarea() {
     console.log("entró a agregar tarea");
