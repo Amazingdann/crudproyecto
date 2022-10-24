@@ -11,6 +11,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-attachment: fixed;
 background-size: cover;
 }
+
 .glass { 
   background-color: #ffffff4d;
   backdrop-filter: blur (3px);
@@ -32,8 +33,13 @@ background-size: cover;
   background-color: rgba(0, 0, 0, .85);
   backdrop-filter: saturate(180%) blur(20px);
 }
-.detalleTarea{
-  display:none
+
+
+.botones{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  
 }
 
 footer {
@@ -41,4 +47,11 @@ footer {
   width: 100%;
   background-color: rgba(0, 0, 0, .85);
   color: white;
+}
+@media (max-width:700px){
+  .filas{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

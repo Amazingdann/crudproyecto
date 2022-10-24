@@ -40,7 +40,7 @@ function actualizarLista(){
     console.log(tareas);
          if(tareas.length === 0){ 
             console.log("no hay tareas");
-            tareasPendientes.innerHTML= `<li class="list-group-item d-flex align-items-center glass"> No hay tareas pendientes </li>`;
+            tareasPendientes.innerHTML= `<li class="list-group-item d-flex align-items-center glass filas"> No hay tareas pendientes </li>`;
             }
             else{ 
             console.log("hay tareas pendientes");
@@ -49,10 +49,10 @@ function actualizarLista(){
                 console.log("entró creación de lista")
                 const li = document.createElement("li");
                 li.innerText = tareaNombre;
-                li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center", "glass");
+                li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center", "glass", "filas");
 
                 const divbuttons = document.createElement("div");
-                divbuttons.classList.add("text-align-right")
+                divbuttons.classList.add("text-align-right", "botones")
 
                 const botoncheck = document.createElement("button");
                 botoncheck.onclick= () => tareaCumplida (tareaNombre);
@@ -118,7 +118,7 @@ function actualizarCompletadas(){
     console.log(completadas);
          if(completadas.length === 0){ 
             console.log("no hay tareas completadas");
-            tareasCompletadas.innerHTML= `<li class="list-group-item d-flex align-items-center glass"> No hay tareas completadas, ponte a chingarle papi  o agrega una tarea</li>`;
+            tareasCompletadas.innerHTML= `<li class="list-group-item d-flex align-items-center glass filas"> No hay tareas completadas, ponte a chingarle papi  o agrega una tarea</li>`;
             }
             else{ 
             console.log("hay tareas completadas");
@@ -127,10 +127,10 @@ function actualizarCompletadas(){
                 console.log("entró creación de lista en completadas")
                 const li = document.createElement("li");
                 li.innerText = tareaNombre;
-                li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center", "glass");
+                li.classList.add("list-group-item", "d-flex", "justify-content-between", "align-items-center", "glass", "filas");
 
                 const divbuttons = document.createElement("div");
-                divbuttons.classList.add("text-align-right")
+                divbuttons.classList.add("text-align-right", "botones")
 
                 const botoncross = document.createElement("button");
                 botoncross.onclick = ()=> eliminarcompletada(tareaNombre);
